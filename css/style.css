@@ -1245,12 +1245,12 @@ img {
   height: auto;
 }
 
-/*--TELEPHONE--*/
+/*--TELEPHONE
 @media screen and (min-width: 428px) {
   .global-continer {
     width: 428px;
   }
-}
+}--*/
 
 /*--TABLET--*/
 @media screen and (min-width: 768px) {
