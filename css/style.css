@@ -137,8 +137,16 @@ body {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/effective-solution.jpg);
+    url(../images/effective-solution-m-1x.jpg);
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .first-section {
+    background-image: url(../images/effective-solution-m-2x.jpg);
+  }
 }
 
 .first-section-container {
@@ -1162,9 +1170,10 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  height: 796px;
+  /*--height: 796px;--*/
   width: 480px;
   background-color: #fff;
+  z-index: 1;
 }
 .js-close-menu {
   margin: 0;
@@ -1221,6 +1230,7 @@ img {
 }
 .mail-class-mobile {
   font-size: 24px;
+  padding-top: 32px;
 }
 .tel-class-mobile,
 .mail-class-mobile:hover {
@@ -1232,6 +1242,7 @@ img {
   flex-direction: row;
   justify-content: space-around;
   padding-top: 64px;
+  padding-bottom: 48px;
 }
 .social-links-mobile a {
   font-family: var(--heading-font-family);
@@ -1242,8 +1253,8 @@ img {
   text-align: left;
   color: var(--link-hover-color);
 }
-.social-link-mobile:not(:last-child) {
-  border: 1px solid rgba(33, 33, 33, 0.2);
+.social-link-mobile a:not(:last-child) {
+  border-right: 1px solid #afb1b8;
 }
 
 /*--TABLET--*/
@@ -1376,7 +1387,24 @@ img {
     display: inline-block;
     width: max-content;
   }
+  .first-section {
+     background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    );
+    background-image: url(../images/effective-solution-t-1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .first-section {
+      background-image: url(../images/effective-solution-t-2x.jpg);
+    }
+  }
 }
+
 /*--DESKTOP--*/
 @media screen and (min-width: 1158px) {
   .global-continer {
@@ -1398,5 +1426,21 @@ img {
   }
   .contact ul {
     width: 500px;
+  }
+  .first-section {
+     background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    background-image: url(../images/effective-solution.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .first-section {
+      background-image: url(../images/effecvtive-solution-d2x.jpg);
+    }
   }
 }
