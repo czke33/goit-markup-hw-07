@@ -452,9 +452,9 @@ body {
 /*--second section first page--*/
 
 .second-section-container li {
-  width: 270px;
   margin-right: 30px;
   margin-bottom: 30px;
+  width: 450px;
 }
 
 .rectangle1,
@@ -463,8 +463,16 @@ body {
 .rectangle4 {
   display: flex;
   background-color: #f5f4fa;
-  width: 270px;
+  padding-left: 190px;
+  padding-right: 190px;
   margin-bottom: 30px;
+  width: 450px;
+}
+.second-section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .svg-image1,
@@ -483,6 +491,10 @@ body {
 .text-list {
   max-width: 1600px;
   padding-top: 94px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .second-section {
@@ -491,8 +503,7 @@ body {
 }
 
 .htwo-text {
-  width: 270px;
-  height: 16px;
+  width: 450px;
 }
 
 .htwo-text {
@@ -510,7 +521,7 @@ body {
 }
 
 .ptwo-text {
-  width: 270px;
+  width: 450px;
   height: 75px;
   margin-top: 6px;
   padding-left: 15px;
@@ -524,72 +535,10 @@ body {
   color: #757575;
   font-family: var(--heading-font-family);
 }
-
-/*--tirth section first page What We Do--*/
-
-.section-three-continer {
-  display: flex;
-  flex-direction: column;
-  margin-top: 0 auto;
-  height: auto;
-}
-.thumb {
-  position: relative;
-  overflow: hidden;
-}
-
-.thumb > .label {
-  position: absolute;
-  margin: 0;
-  font-family: var(--heading-font-family);
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  width: 370px;
-  height: 70px;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(47, 48, 58, 0.8);
-}
-
-.hthree-text {
-  display: flex;
-  justify-content: center;
-  margin-top: 94px;
-}
-
+/*--section three What we do--*/
 .section-three {
-  background-color: #fff;
+  display: none;
 }
-
-.image-whatwedo {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.image-whatwedo li {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-bottom: 94px;
-}
-
-.hthree-text {
-  font-weight: 700;
-  font-size: 36px;
-  text-align: center;
-  letter-spacing: 3%;
-  color: #212121;
-  font-family: var(--heading-font-family);
-}
-
 /*--section four OUR TEAM--*/
 
 .fourth-section-continer {
@@ -606,61 +555,46 @@ body {
   padding-right: 502px;
 }
 
-.fourth-section-continer ul {
+.image-ourteam {
   display: flex;
-  padding-top: 50px;
-  justify-items: center;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 96px;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
-
-.walker-container {
+.fourth-cards-first-row,
+.fourth-cards-second-row {
   display: block;
-  border-style: none;
-  border-color: #f5f4fa;
-  border-radius: 0px 0px 4px 4px;
-  max-width: 100%;
-  height: auto;
-  background-color: #fff;
-  border-radius: 0px, 0px, 4px, 4px;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-.kylie-container {
-  display: block;
-  border-style: none;
-  border-color: #f5f4fa;
-  border-radius: 0px 0px 4px 4px;
-  height: auto;
-  margin-left: 30px;
-  background-color: #fff;
-  border-radius: 0px, 0px, 4px, 4px;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-}
-
-.ryan-container {
-  display: block;
-  border-style: none;
-  border-color: #f5f4fa;
-  border-radius: 0px 0px 4px 4px;
-  margin-left: 30px;
-  height: auto;
-  background-color: #fff;
-  border-radius: 0px, 0px, 4px, 4px;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-}
-
+.walker-container,
+.kylie-container,
+.ryan-container,
 .tyler-container {
   display: block;
   border-style: none;
   border-color: #f5f4fa;
   border-radius: 0px 0px 4px 4px;
-  margin-left: 30px;
-  height: auto;
+
   background-color: #fff;
   border-radius: 0px, 0px, 4px, 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+.walker-container img {
+  width: 450px;
+  height: 460px;
+}
+.kylie-container img {
+  width: 450px;
+  height: 460px;
+}
+.ryan-container img {
+  width: 450px;
+  height: 460px;
+}
+.tyler-container img {
+  width: 450px;
+  height: 460px;
 }
 
 .social-ellipse {
@@ -1371,12 +1305,7 @@ img {
       background-image: url(../images/effective-solution-t-2x.jpg);
     }
   }
-  /*--second section--*/
-  /*--.second-section-card {
-    display: grid;
-    grid-template-columns: auto auto;
-    flex-basis: calc((100%-60px) / 2);
-  }-*/
+
   .second-section-container {
     display: flex;
     justify-content: center;
@@ -1401,7 +1330,51 @@ img {
     padding-right: 142px;
     height: 120px;
   }
+  .text-list {
+    flex-direction: row;
+  }
+  .htwo-text,
+  .ptwo-text {
+    width: 354px;
+  }
+  /*--section three What we do--*/
+  .section-three {
+    display: none;
+  }
 
+  /*--forth section Our Team--*/
+  .walker-container img {
+    width: 354px;
+    height: 375px;
+  }
+  .kylie-container img {
+    width: 354px;
+    height: 375px;
+  }
+  .ryan-container img {
+    width: 354px;
+    height: 375px;
+  }
+  .tyler-container img {
+    width: 354px;
+    height: 375px;
+  }
+  .fourth-cards-first-row,
+  .fourth-cards-second-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .image-ourteam {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+  }
   /*--DESKTOP--*/
   @media screen and (min-width: 1158px) {
     .global-continer {
@@ -1476,13 +1449,116 @@ img {
     .rectangle3,
     .rectangle4 {
       width: 270px;
+      padding-left: 100px;
+      padding-right: 100px;
     }
-    .svg-image1,
-    .svg-image2,
-    .svg-image3,
-    .svg-image4 {
+    .htwo-text,
+    .ptwo-text {
       width: 270px;
-      height: 120px;
+      height: 16px;
+    }
+
+    /*--tirth section first page What We Do--*/
+    .section-three {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .section-three-continer {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0 auto;
+      height: auto;
+    }
+    .thumb {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .thumb > .label {
+      position: absolute;
+      margin: 0;
+      font-family: var(--heading-font-family);
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      width: 370px;
+      height: 70px;
+      padding-top: 27px;
+      padding-bottom: 27px;
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(47, 48, 58, 0.8);
+    }
+
+    .hthree-text {
+      display: flex;
+      justify-content: center;
+      margin-top: 94px;
+    }
+
+    .section-three {
+      background-color: #fff;
+    }
+
+    .image-whatwedo {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .image-whatwedo li {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 94px;
+    }
+
+    .hthree-text {
+      font-weight: 700;
+      font-size: 36px;
+      text-align: center;
+      letter-spacing: 3%;
+      color: #212121;
+      font-family: var(--heading-font-family);
+    }
+    /*--forth section Our Team--*/
+    .image-ourteam .four-image-class {
+      display: flex;
+      padding-top: 50px;
+      justify-items: center;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-bottom: 96px;
+      align-content: center;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .walker-container img {
+      width: 270px;
+      height: 260px;
+    }
+    .kylie-container img {
+      width: 270px;
+      height: 260px;
+    }
+    .ryan-container img {
+      width: 270px;
+      height: 260px;
+    }
+    .tyler-container img {
+      width: 270px;
+      height: 260px;
+    }
+    .fourth-cards-first-row,
+    .fourth-cards-second-row {
+      display: flex;
+      flex-direction: row;
     }
   }
 }
