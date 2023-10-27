@@ -61,7 +61,7 @@ body {
 .header-container {
   display: flex;
   flex-direction: row;
-  height: 60px;
+  height: 80px;
   align-items: center;
   border-style: solid;
   border-bottom-width: 1px;
@@ -128,8 +128,8 @@ body {
   width: -webkit-fill-available;
 }
 .mobile-menu svg {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
 }
 .contact-mobile {
   padding-top: 306px;
@@ -183,7 +183,7 @@ body {
 .js-menu-container {
   display: none;
   width: 100vw;
-  height: auto;
+  height: 100vh;
 }
 .js-menu-container.is-open {
   display: flex;
@@ -191,8 +191,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  /*--height: 796px;--*/
-
   background-color: #fff;
   z-index: 1;
 }
@@ -202,8 +200,8 @@ body {
   padding: 0;
 }
 .js-close-menu svg {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   position: absolute;
   top: 10px;
   right: 15px;
@@ -480,10 +478,6 @@ body {
 .checkbox-css:hover {
   cursor: pointer;
 }
-/*--input:checked + label {
-  background-image: url("../images/icons/icon-check.svg");
-  background-size: cover;
-}--*/
 
 .icon-check {
   left: -1.9px;
@@ -563,10 +557,12 @@ body {
 .rectangle4 {
   display: flex;
   background-color: #f5f4fa;
-  padding-left: 190px;
-  padding-right: 190px;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
-  width: 450px;
+  width: 100vw;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .second-section-container {
   display: flex;
@@ -651,8 +647,6 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 94px;
-  padding-left: 502px;
-  padding-right: 502px;
 }
 
 .image-ourteam {
@@ -676,26 +670,28 @@ body {
   border-color: #f5f4fa;
   border-radius: 0px 0px 4px 4px;
   margin-top: 30px;
-
+  width: 100vw;
+  margin-right: 15px;
+  margin-left: 15px;
   background-color: #fff;
   border-radius: 0px, 0px, 4px, 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 .walker-container img {
-  width: 450px;
-  height: 460px;
+  width: 100vw;
+  height: auto;
 }
 .kylie-container img {
-  width: 450px;
-  height: 460px;
+  width: 100vw;
+  height: auto;
 }
 .ryan-container img {
-  width: 450px;
-  height: 460px;
+  width: 100vw;
+  height: auto;
 }
 .tyler-container img {
-  width: 450px;
-  height: 460px;
+  width: 100vw;
+  height: auto;
 }
 
 .social-ellipse {
@@ -1406,6 +1402,12 @@ img {
   }
 
   /*--forth section Our Team--*/
+  .walker-container,
+  .kylie-container,
+  .ryan-container,
+  .tyler-container {
+    width: 354px;
+  }
   .walker-container img {
     width: 354px;
     height: 375px;
@@ -1841,7 +1843,7 @@ img {
     justify-content: center;
     align-items: center;
   }
-  .walker-container img {
+  /*--.walker-container img {
     width: 270px;
     height: 260px;
   }
@@ -1856,11 +1858,17 @@ img {
   .tyler-container img {
     width: 270px;
     height: 260px;
-  }
+  }--*/
   .fourth-cards-first-row,
   .fourth-cards-second-row {
     display: flex;
     flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .image-ourteam .four-image-class {
+    padding: 0;
+    margin: 0;
   }
   /*--fifth section Regular Customer--*/
   .regular-rectangle {
