@@ -183,6 +183,7 @@ body {
 .js-menu-container {
   display: none;
   width: 100vw;
+  height: auto;
 }
 .js-menu-container.is-open {
   display: flex;
