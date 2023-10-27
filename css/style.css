@@ -182,6 +182,7 @@ body {
 /*--mobile menu js--*/
 .js-menu-container {
   display: none;
+  width: 100vw;
 }
 .js-menu-container.is-open {
   display: flex;
