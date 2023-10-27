@@ -800,7 +800,7 @@ a {
 .regular-rectangle {
   display: flex;
   justify-content: center;
-  width: 300px;
+  width: 270px;
   height: 92px;
   background-color: #fff;
   border: 1px solid #afb1b8;
