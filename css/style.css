@@ -38,9 +38,6 @@ a {
   min-width: 360px;
   width: 1600px;
 }
-body {
-  width: fit-content;
-}
 
 .visually-hidden {
   position: absolute;
@@ -117,8 +114,8 @@ body {
 }
 /*--Mobile Menu--*/
 .menu-mobile-navigation {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 .mobile-menu {
   display: flex;
@@ -250,7 +247,8 @@ body {
 .first-section-container {
   display: inline-block;
   margin: 0%;
-  padding: 200px 452px 280px 452px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
 .head-text {
@@ -560,7 +558,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  width: 100vw;
+  width: 450px;
   margin-left: 15px;
   margin-right: 15px;
 }
@@ -569,6 +567,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.second-section-card {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10 px;
 }
 
 .svg-image1,
@@ -582,6 +588,8 @@ body {
   background-position: center;
   padding-top: 25px;
   padding-bottom: 25px;
+  width: 70px;
+  height: 120px;
 }
 
 .text-list {
@@ -670,7 +678,7 @@ body {
   border-color: #f5f4fa;
   border-radius: 0px 0px 4px 4px;
   margin-top: 30px;
-  width: 100vw;
+
   margin-right: 15px;
   margin-left: 15px;
   background-color: #fff;
@@ -678,20 +686,20 @@ body {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 .walker-container img {
-  width: 100vw;
-  height: auto;
+  width: 450px;
+  height: 460px;
 }
 .kylie-container img {
-  width: 100vw;
-  height: auto;
+  width: 450px;
+  height: 460px;
 }
 .ryan-container img {
-  width: 100vw;
-  height: auto;
+  width: 450px;
+  height: 460px;
 }
 .tyler-container img {
-  width: 100vw;
-  height: auto;
+  width: 450px;
+  height: 460px;
 }
 
 .social-ellipse {
@@ -792,7 +800,7 @@ body {
 .regular-rectangle {
   display: flex;
   justify-content: center;
-  width: 320px;
+  width: 300px;
   height: 92px;
   background-color: #fff;
   border: 1px solid #afb1b8;
@@ -1364,19 +1372,17 @@ img {
       background-image: url(../images/effective-solution-t-2x.jpg);
     }
   }
+  .second-section {
+    display: block;
+    justify-content: center;
+  }
 
   .second-section-container {
-    display: flex;
+    display: block;
     justify-content: center;
+    grid-template-columns: auto auto;
   }
-  .second-section-first-row,
-  .second-section-second-row {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
+
   .second-section-container li {
     width: 354px;
   }
@@ -1389,8 +1395,24 @@ img {
     padding-right: 142px;
     height: 120px;
   }
+  .svg-image1,
+  .svg-image2,
+  .svg-image3,
+  .svg-image4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 120px;
+  }
   .text-list {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 30px;
   }
   .htwo-text,
   .ptwo-text {
@@ -1718,6 +1740,9 @@ img {
     .first-section {
       background-image: url(../images/effecvtive-solution-d2x.jpg);
     }
+    .first-section-container {
+      padding: 200px 452px 280px 452px;
+    }
   }
   .modal-content {
     width: 528px;
@@ -1760,6 +1785,10 @@ img {
   .ptwo-text {
     width: 270px;
     height: 16px;
+  }
+  .text-list {
+    display: flex;
+    flex-direction: row;
   }
 
   /*--tirth section first page What We Do--*/
