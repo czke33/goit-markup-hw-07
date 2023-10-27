@@ -115,7 +115,11 @@ body {
 .contact-container {
   display: none;
 }
-
+/*--Mobile Menu--*/
+.menu-mobile-navigation {
+  width: 100vw;
+  height: 100vh;
+}
 .mobile-menu {
   display: flex;
   padding-left: 10px;
@@ -686,22 +690,25 @@ body {
 
 /*--fifth section Regular Customer--*/
 .fifth-section-container {
-  display: block;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-top: 94px;
+  margin-bottom: 60px;
 }
 
 .regular-rectangle {
-  width: 210px;
+  display: flex;
+  justify-content: center;
+  width: 320px;
   height: 92px;
   background-color: #fff;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  margin-bottom: 94px;
 }
 
 .regular-rectangle-container {
-  display: grid;
+  display: flex;
   flex-wrap: wrap;
   padding: 0;
   list-style-type: none;
@@ -737,7 +744,6 @@ body {
 
 .logo {
   padding-top: 16px;
-  padding-left: 52px;
   fill: #a8b1b8;
   box-sizing: content-box;
 }
@@ -1668,6 +1674,9 @@ img {
 @media screen and (min-width: 1158px) {
   .global-continer {
     width: 1200px;
+  }
+  .main-container {
+    width: 100vw;
   }
   /*--header navigation--*/
   .contact {
