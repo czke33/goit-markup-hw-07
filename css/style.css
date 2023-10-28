@@ -35,7 +35,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  /*-- min-width: 360px;--*/
+  min-width: 360px;
   width: 100%;
 }
 
@@ -327,7 +327,7 @@ a {
   position: relative;
   background-color: #fff;
   padding: 20px;
-  width: 450px;
+  width: 360px;
   height: 609px;
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
@@ -418,7 +418,7 @@ a {
 }
 
 .modal-form textarea {
-  width: 370px;
+  width: 320px;
   height: 120px;
   background-color: #fff;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -558,7 +558,7 @@ a {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  width: 420px;
+  width: 360px;
 }
 .second-section-container {
   display: flex;
@@ -605,7 +605,7 @@ a {
 }
 
 .htwo-text {
-  width: 420px;
+  width: 360px;
 }
 
 .htwo-text {
@@ -623,7 +623,7 @@ a {
 }
 
 .ptwo-text {
-  width: 450px;
+  width: 360px;
   height: 75px;
   margin-top: 6px;
 }
@@ -676,19 +676,19 @@ a {
   justify-content: center;
 }
 .walker-container img {
-  width: 430px;
+  width: 360px;
   height: auto;
 }
 .kylie-container img {
-  width: 430px;
+  width: 360px;
   height: auto;
 }
 .ryan-container img {
-  width: 430px;
+  width: 360px;
   height: auto;
 }
 .tyler-container img {
-  width: 430px;
+  width: 360px;
   height: auto;
 }
 
@@ -1169,7 +1169,7 @@ a {
 
 .footer-email-form label input {
   height: 50px;
-  width: 450px;
+  width: 360px;
   background-color: rgba(33, 150, 243, 0);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
