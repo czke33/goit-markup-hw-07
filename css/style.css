@@ -855,7 +855,7 @@ a {
 .button-section ul {
   list-style-type: none;
   display: grid;
-  grid-template-columns: 64px 120px 83px 96px 121px;
+  grid-template-columns: auto auto auto auto auto;
   grid-column-gap: 8px;
   align-content: center;
   justify-content: center;
@@ -1686,6 +1686,15 @@ img {
     display: grid;
     grid-template-columns: auto auto;
     flex-basis: calc((100%-60px) / 2);
+  }
+  .button-section ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 64px 120px 83px 96px 121px;
+    grid-column-gap: 8px;
+    align-content: center;
+    justify-content: center;
+    margin-top: 94px;
   }
 }
 /*--DESKTOP--*/
