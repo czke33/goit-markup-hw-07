@@ -134,6 +134,7 @@ a {
   align-content: flex-end;
   justify-content: flex-end;
   align-items: flex-start;
+  padding-top: 50%;
 }
 .tel-class-mobile,
 .mail-class-mobile {
